@@ -58,6 +58,7 @@ Text Domain: polo
     --primary-color: black;
     --secondary-color: rgb(30, 30, 30);
     --white-color: white;
+    --Hover_color: rgb(80, 80, 80)
 
 }
 
@@ -83,7 +84,7 @@ a {
 a:focus, 
 a:hover {
     text-decoration: none;
-    color: #00ceb8;
+    color: var(--Hover_color);
 }
 
 .img_res{
@@ -93,6 +94,7 @@ a:hover {
     max-width: 100%;
 }
 .block-title {
+    color: var(--white-color);
     font-weight: 300;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 3.8em;
@@ -105,7 +107,8 @@ a:hover {
 }
 
 .block {
-    padding: 80px 0px 50px 0px;
+    background-image: url(../img/map-image.png);
+    padding: 30px 0px 30px 0px;
     overflow: hidden;
 }
 .title-box{
@@ -253,7 +256,7 @@ a:hover {
     padding-right: 25px;
 }
 .close-btn:hover {
-    color: #84FFB0;
+    color: var(--Hover_color);
 }
 
 
@@ -318,8 +321,8 @@ a:hover {
     padding-top: 15px;
 }
 .store-btn:hover,#menu-toggle:hover {
-    background: #00ceb8;
-    border-color: #00ceb8;
+    background: var(--secondary-color);
+    border-color: var(--Hover_color);
     color: #fff;
 }
 
@@ -357,8 +360,8 @@ a:hover {
     padding: 20px 30px 0px 30px;
 }
 .store:hover{
-    background: #00ceb8;
-    border-color: #00ceb8;
+    background: var(--Hover_color);
+    border-color: var(--white-color);
     color: #fff; 
 }
 .polo-btn i {
@@ -377,6 +380,10 @@ a:hover {
 /* ///////////////////////////////////////////////////////////////////// 
 //  07 - Features
 /////////////////////////////////////////////////////////////////////*/
+
+#features .block{
+    
+}
 
 .feature-box {
     padding: 30px 0px;
@@ -412,6 +419,7 @@ a:hover {
     background-attachment: fixed;
 }
 
+
 #screenshots .item{
   padding: 0px 0px;
   margin: 10px;
@@ -445,10 +453,12 @@ a:hover {
 
 .gallery-nav:hover,.gallery-nav:focus,.gallery-nav:active {
     color: #fff;
-    background:#6ecba9;
+    background:var(--Hover_color);
 }
 
-
+.icon{
+    height: 100px;
+}
 
 /* ///////////////////////////////////////////////////////////////////// 
 //  09 - Team Member
@@ -533,11 +543,15 @@ a:hover {
 
 
 #testimonial {
+    height: 450px;
     background: url(../img/testi-bg_2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+
+
 
 .review-star {
     text-align: center;
@@ -547,7 +561,7 @@ a:hover {
 }
 .client-pic {
     padding: 0em 2em;
-    max-width: 360px;
+    max-width: 210px;
     margin: 0 auto;
 }
 .client-pic img {
@@ -555,7 +569,7 @@ a:hover {
 }
 
 .review-desc {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.8;
     font-weight: 100;
     font-style: italic;
@@ -564,13 +578,16 @@ a:hover {
 }
 #testimonial .block-title {
     color: #fff;
+    so
 }
+
 #testimonial .block-title span {
     border-color: #fff;
 }
+
 p.client-name {
     float: right;
-    font-size: 30px;
+    font-size: 18px;
     color: #fff;
     display: inline-block;
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
